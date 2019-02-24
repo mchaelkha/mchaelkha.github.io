@@ -1,66 +1,99 @@
 html, body {
     display: block;
-    background: #142634;
-    /*background: #0E0B16;
-    /*background: #2c2926;*/
-    color: #E5E5E5;
+    background-color: #4d4d4d;
     font-family: 'Archivo', sans-serif;
 }
 
-.container {
+body {
+    position: absolute;
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 30px;
+    background: #142634;
+    color: #E5E5E5;
+}
+
+section {
     position: relative;
 }
 
 header {
-    display: block;
+    display: inline;
+    padding-top: 30pt;
 }
 
-.link {
-    position: absolute;
-    top: 15px;
-    right: 25%;
-    z-index: 10000;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-}
-
-.link a {
-    margin: 10px;
+a {
     color: #E5E5E5;
     overflow: hidden;
     text-decoration: none;
 }
 
+
+
+header span a {
+    font-size: 1.7em;
+    letter-spacing: 2pt;
+}
+
+nav {
+    position: sticky;
+    display: inherit;
+    float: right;
+    z-index: 1;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+nav ul {
+    border-bottom: 1px solid #778;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0;
+    display: inline;
+}
+
+nav ul li a {
+    padding: 0.2em 1em;
+    margin: 10px;
+    border: 1px solid #778;
+    border-bottom: none;
+    background: #221;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #4d4d4d;
+}
+
 .content {
-    position: absolute;
-    display: block;
-    width: 50%;
-    left: 25%;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .content h1 {
-    letter-spacing: 2px;
-    font-size: 3em;
-    font-weight: bold;
+    padding-top: 10%;
+    letter-spacing: 6pt;
+    font-size: 4em;
+    text-align: center;
 }
 
-.content a {
-    color: #E5E5E5;
+.content h2 {
+    font-size: 2em;
 }
 
 .content p {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 footer {
     display: block;
-}
-
-footer p {
-    position: absolute;
-    top: 50em;
-    left: 25%;
+    position: relative;
+    margin-top: 20em;
 }
 
 @font-face {
