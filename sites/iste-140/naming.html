@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Michael Kha | Project 3</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="bar">
+                <a href="../index.html">Home</a>
+                <a href="index.html">Clean Code</a>
+                <a class="active" href="naming.html">Naming</a>
+                <a href="functions.html">Functions</a>
+                <a href="comments.html">Comments</a>
+                <a href="formatting.html">Formatting</a>
+                <a href="resources.html">Resources</a>
+            </nav>
+        </header>
+        <div id="sidebar">
+        <nav class="toc">
+            <ul>
+                <li><a href="#naming">Naming</a></li>
+                <li><a href="#how">How?</a></li>
+                <li><a href="#intent">Intent</a></li>
+                <li><a href="#interpret">Interpreting</a></li>
+                <li><a href="#conventions">Conventions</a></li>
+            </ul>
+            <div class="buttons">
+                <img id="menu-icon" src="assets/images/menu.png" alt="" width="30" height="30">
+                <a id="scroll-icon" href="#">
+                    <img src="assets/images/scroll-to-top.png" alt=""
+                    width="30" height="30">
+                </a>
+            </div>
+        </nav>
+        </div>
+        <div class="content">
+            <h1 id="naming">Naming</h1>
+            <img class="pic" src="assets/images/dictionary.jpg" alt=""
+            width="320" height="213">
+            <p>Names provide substance to software. The variables you use, the
+                functions you call, and the files you write all have names. It
+                is important to be <i>good</i> at naming. The other day, my
+                brother, who was working on image processing research, realized
+                that he was misusing the correlation coefficient function from
+                the <a href="http://www.numpy.org/" target="_blank">NumPy
+                library</a> for months. He wanted the coefficient of
+                <i>determination</i> to perform linear regressions on some
+                datasets.
+            </p>
+            <h2 id="how">How?</h2>
+            <p>Generally you want to name using whole words. No symbols. Just
+                words. Names can be phrases that fully express your ideas. The
+                best way to demonstrate is with an example. The following are
+                possible variable names for a list of people's ages in an area.
+            </p>
+            <ul id="code">
+                <li>List&lt;Integer&gt; aList;</li>
+                <li>List&lt;Integer&gt; theAgeOfPeopleInUrbanAreas;</li>
+                <li>List&lt;Integer&gt; populationAge;</li>
+            </ul>
+            <p>The most readable is 'populationAge'. There is a clear
+                indication what population age means here. The list contains
+                the age of a population. There is also a lack of articles and
+                specifics. We want to describe the bare minimum without adding
+                distractions and limitations to what might be in a list.
+                When it comes to naming, there is a clear way of describing
+                intention and interpretation.
+            </p>
+            <h2 id="intent">Intent</h2>
+            <p>There are several benefits to good naming. The main ones are
+                being able to understand and change the code later on. You want
+                to save time when reading code. It is frustrating to read
+                poorly written code and trying to get inside the head of
+                another developer. Good names are meant to answer questions a
+                reader may have. Consider revising names that require
+                explanatory comments.
+            </p>
+            <p>We should also avoid acronyms. Acronyms leave the reader guessing
+                the meaning of symbols. This is especially true when it comes to
+                writing code in a dynamically typed language. The reader has to
+                decipher how the name is being used out of context.
+            </p>
+            <h2 id="interpret">Interpreting</h2>
+            <p>Similar names can create misassociations of information. Perhaps
+                you have multiple observers that observe different subjects.
+                Naming them o1, o2, and o3 would be a disaster. You want to be
+                able to interpret how each variable interacts within a function
+                easily.
+            </p>
+            <p>Having a generic name can also lead to trouble. Often enough,
+                you may want to search for a specific variable you named. If
+                the variable was named 'a', you would bring up every instance
+                where you typed the letter 'a'. You want to make a name
+                specific enough while at the same time being unique. Another
+                lesson from this is when you use a name, stick with it. Make it
+                searchable.
+            </p>
+            <h2 id="conventions">Conventions</h2>
+            <p>Typically, classes and objects should have nouns or noun
+                phrases. Methods should be actions or verbs.
+            </p>
+            <p>Another rule to follow is sticking to a single word per
+                concept. If classes both act as controllers, it is best to call
+                them controllers. When you start to call classes differently,
+                you consequently introduce discrepancies between those classes.
+                What makes a controller different from a manager?
+            </p>
+            <p>Names should originate from the problem domain. Using the common
+                language of the domain is essential for having the programmer
+                be on the same page as the expert.
+            </p>
+            <figure class="xkcd">
+                <a href="https://xkcd.com/1695/" target="_blank"><img
+                    class="pic" src="assets/images/code_quality_2.png" alt=""
+                    width="480" height="461"></a>
+                <figcaption>Relevant xkcd (xkcd 1695, Code Quality 2).
+                </figcaption>
+            </figure>
+            <footer>
+                &copy; 2019 Michael Kha
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

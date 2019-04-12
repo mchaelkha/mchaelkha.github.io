@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Michael Kha | Project 3</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="bar">
+                <a href="../index.html">Home</a>
+                <a href="index.html">Clean Code</a>
+                <a href="naming.html">Naming</a>
+                <a href="functions.html">Functions</a>
+                <a class="active" href="comments.html">Comments</a>
+                <a href="formatting.html">Formatting</a>
+                <a href="resources.html">Resources</a>
+            </nav>
+        </header>
+        <div id="sidebar">
+            <nav class="toc">
+                <ul>
+                    <li><a href="#comments">Comments</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#good">Good</a></li>
+                    <li><a href="#bad">Bad</a></li>
+                </ul>
+                <div class="buttons">
+                    <img id="menu-icon" src="assets/images/menu.png" alt="" width="30" height="30">
+                    <a id="scroll-icon" href="#">
+                        <img src="assets/images/scroll-to-top.png" alt=""
+                            width="30" height="30">
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 id="comments">Comments</h1>
+            <blockquote id="quote">
+                “The proper use of comments is to compensate for our failure to
+                express ourself in code. Note that I used the word failure. I
+                meant it. Comments are always failures.” <p>Robert C.
+                Martin - <i>Clean Code: A Handbook of Agile Software
+                Craftsmanship</i></p>
+            </blockquote>
+            <h2 id="usage">Usage</h2>
+            <p>The purpose of using comments is to explain code that is unable
+                to express itself. We may also write comments to detail in plain
+                English what we are doing. Code should always try to be
+                self-explanatory. Even when we write comments, the code is the
+                one speaking. Comments only indicate what you the programmer
+                intended the code to do.
+            </p>
+            <p>Comments should not replace bad code. Bad code needs to be fixed.
+                First consider revising the code before adding in-line comments.
+                The reality is that the person will look at the code for a
+                number of reasons, the main ones being to understand, reuse, or
+                make changes. The code is always universal.
+            </p>
+            <h2 id="good">Good Comments</h2>
+            <p>Sometimes comments are necessary. It may be a coding standard
+                that is expected of the programmer. There is a reason comments
+                can be collapsed. A main usage of comments is header blocks.
+                Header blocks should concisely tell the reader what each class
+                and what each function does. The variables used and the
+                expected inputs and outputs are detailed.
+            </p>
+            <p>Comments seek to clarify and may validate the reader's
+                understanding. Comments may show consequences to using a
+                function poorly, where that function should never be called at
+                an instance of time. They can also address less obvious calls
+                to other functions.
+            </p>
+            <h2 id="bad">Bad Comments</h2>
+            <p>There are many times where you should not leave comments around.
+                Comments may become redundant for simple functions that are
+                clear. As mentioned, comments can also be misleading to what the
+                code actually does. Another case of bad comments is commented-
+                out code. It is a subcategory of lava flow and faces the same
+                problems of why was this code not deleted.
+            </p>
+            <p>I have been through many classes in the computer science and
+                software engineering curriculum that mandate all classes,
+                functions, and fields need comment blocks. Sometimes by having
+                self-explaining names, the need for comments is pointless. They
+                add additional "noise" as Martin points out. I have fallen to
+                be a victim where I copy-paste documentation of the same field
+                in various classes out of following convention.
+            </p>
+            <figure class="xkcd">
+                <a href="https://xkcd.com/1926/" target="_blank"><img
+                    class="pic" src="assets/images/bad_code.png" alt="">
+                </a>
+                <figcaption>Relevant xkcd (xkcd 1926, Bad Code).
+                </figcaption>
+            </figure>
+            <footer>
+                &copy; 2019 Michael Kha
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
