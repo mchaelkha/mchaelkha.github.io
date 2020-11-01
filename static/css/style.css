@@ -1,57 +1,114 @@
+:root {
+    --primary-font-color: #f2f3f5;
+    --secondary-font-color: #364697;
+    --tertiary-font-color: #261145;
+    --home-back-color: #f2686a;
+    --shadow-color: #2d2c2f;
+}
+
 html, body {
     display: block;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 body {
     display: block;
     margin: 0;
-    margin-left: 12%;
-    margin-right: 12%;
+    color: var(--primary-font-color);
+    background-color: var(--home-back-color);
 }
 
-#page-container {
+h1, h2 {
+    text-shadow: 2px 0px var(--shadow-color);
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 2rem 1rem 0.5rem 1rem;
+}
+
+a {
+    color: var(--primary-font-color);
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 1px 0px var(--shadow-color);
+}
+
+a:hover {
+    color: var(--tertiary-font-color);
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    min-height: 80vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: relative;
+    min-height: 80vh;
+    margin: 0 12% 0 12%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin: 0 12% 0 12%;
+}
+
+.resume-container {
     min-height: 100vh;
 }
 
-header {
-  padding-top: 2rem;
+#home {
 }
 
-header h1 {
-    display: inline;
-    position: relative;
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-left: 1rem;
 }
 
-.contact ul {
-    padding-left: 1em;
-}
-
-.contact ul li {
+ul li {
     display: block;
     list-style-type: none;
     margin: 0;
-    margin-bottom: 1em;
+    margin-right: 1.25rem;
 }
 
-.contact ul a {
-    color: #030303;
-    text-decoration: none;
+.highlight {
+    color: var(--secondary-font-color);
 }
 
-.contact ul a:hover {
-    color: #030303;
-    text-decoration: underline;
+.info {
+    margin: 0rem 1rem 0 1rem;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
+.info-desc p {
+    font-size: 20px;
+    width: 50vw;
+    margin: 0;
+    text-shadow: 1px 0px var(--shadow-color);
 }
 
-@font-face {
-    font-family: 'Ubuntu', sans-serif;
+.info-desc {
+    margin: 1rem;
+}
+
+.icon {
+    font-size: 40px;
 }
