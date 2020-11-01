@@ -1,51 +1,30 @@
-@font-face {
-    font-family: 'Ubuntu', sans-serif;
-}
-
 :root {
     --primary-font-color: #f2f3f5;
-    --secondary-font-color: #1012B6;
-    --tertiary-font-color: #ed8829;
+    --secondary-font-color: #364697;
+    --tertiary-font-color: #261145;
     --home-back-color: #f2686a;
-    --about-back-color: #7c14eb;
-    --contact-back-color: #5f9e1b;
+    --shadow-color: #2d2c2f;
 }
 
 html, body {
     display: block;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 body {
     display: block;
     margin: 0;
     color: var(--primary-font-color);
+    background-color: var(--home-back-color);
 }
 
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 2rem;
+h1, h2 {
+    text-shadow: 2px 0px var(--shadow-color);
 }
-
-header h1 {
-    display: inline;
-    position: relative;
-    margin: 1rem;
-    margin-bottom: 0;
-}
-
-header nav {
-    font-size: 1.3rem;
-}
-
-header nav a {
-    margin: 1rem;
-} */
 
 h1 {
     font-size: 48px;
+    margin: 0;
 }
 
 h2 {
@@ -55,7 +34,9 @@ h2 {
 
 a {
     color: var(--primary-font-color);
+    font-size: 20px;
     text-decoration: none;
+    text-shadow: 1px 0px var(--shadow-color);
 }
 
 a:hover {
@@ -63,11 +44,13 @@ a:hover {
 }
 
 .page-container {
-    width: 100%;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    min-height: 80vh;
 }
 
-.home-container, .about-container, .contact-container {
+.home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,28 +60,34 @@ a:hover {
     margin: 0 12% 0 12%;
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin: 0 12% 0 12%;
+}
+
+.resume-container {
+    min-height: 100vh;
+}
+
 #home {
-    background-color: var(--home-back-color);
 }
 
-#about {
-    background-color: var(--about-back-color);
-}
-
-#contact {
-    background-color: var(--contact-back-color);
-}
-
-.contact-container ul {
-    padding-left: 1em;
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
     margin-left: 1rem;
 }
 
-.contact-container ul li {
+ul li {
     display: block;
     list-style-type: none;
     margin: 0;
-    margin-bottom: 1em;
+    margin-right: 1.25rem;
 }
 
 .highlight {
@@ -106,30 +95,20 @@ a:hover {
 }
 
 .info {
-    margin: 0rem 1rem 2rem 1rem;
-}
-
-.info p, .info-desc p {
-    margin: 0.5rem 0 0.5rem;
-}
-
-.info p {
-    font-size: 24px;
+    margin: 0rem 1rem 0 1rem;
 }
 
 .info-desc p {
     font-size: 20px;
+    width: 50vw;
+    margin: 0;
+    text-shadow: 1px 0px var(--shadow-color);
 }
 
 .info-desc {
     margin: 1rem;
 }
 
-.flavor-text {
-    margin-top: 2rem;
+.icon {
+    font-size: 40px;
 }
-
-.flavor-text p {
-    font-size: 14px;
-}
-
