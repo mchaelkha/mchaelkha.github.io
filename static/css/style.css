@@ -25,32 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-medium:before {
-  content: "\e900";
-  font-size: 32px;
-}
-.icon-profile:before {
-  content: "\e923";
-  font-size: 32px;
-}
-.icon-envelop:before {
-  content: "\e945";
-  font-size: 32px;
-}
-.icon-github:before {
-  content: "\eab0";
-  font-size: 32px;
-}
-.icon-linkedin:before {
-  content: "\eac9";
-  font-size: 32px;
+.svg-def {
+    width: 0;
+    height: 0;
 }
 
 :root {
     --primary-font-color: #f2f3f5;
-    --secondary-font-color: #364697;
-    --tertiary-font-color: #261145;
-    --home-back-color: #f2686a;
+    --secondary-font-color: #f2686a;
+    --tertiary-font-color: #f2686a;
+    --home-back-color: #140f0f;
     --shadow-color: #2d2c2f;
 }
 
@@ -148,7 +132,7 @@ ul li {
 
 .info-desc p {
     font-size: 20px;
-    width: 50vw;
+    min-width: 50vw;
     margin: 0;
     text-shadow: 1px 0px var(--shadow-color);
 }
