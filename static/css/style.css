@@ -85,20 +85,8 @@ a:hover {
     margin: 0 12% 0 12%;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    margin: 0 12% 0 12%;
-}
-
 .resume-container {
     min-height: 100vh;
-}
-
-#home {
 }
 
 ul {
@@ -142,12 +130,28 @@ p, a {
     font-size: 40px;
 }
 
-.calendar {
+.calendar, .resume {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.calendar iframe {
+iframe {
+    border: 0;
     margin-top: 1%;
+    width: 80vw;
+    height: 80vh; 
+}
+
+@media (min-width: 1281px) {
+
+    .calendar iframe {
+        width: 800px;
+        height: 600px; 
+    }
+
+    .resume iframe {
+        width: 1200px;
+        height: 900px; 
+    }
 }
