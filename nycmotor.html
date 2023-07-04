@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello there, I'm Michael. I am a software engineer.">
+    <title>🍎 🚓 | Michael Kha</title>
+    <link rel="shortcut icon" type="image/jpg" href="static/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="data-mining">
+        <h2>Data Mining Final Project</h2>
+        <p>
+          I have always had an appreciation for working with data. During my last semester I decided to challenge myself and take a data mining course while skipping the prerequisite AI class.
+          You can <a href="https://github.com/mchaelkha/nyc-collision-analysis" rel="noopener noreferrer" target="_blank">access the repository here</a> (don't mind the data science coding quality!).
+        </p>
+        <br>
+        <p>The high-level project prompt is below.</p>
+        <section id="instructions">
+          Given the NY City car crash data base. Imagine that NY City has hired you to assess the impact of COVID-19 on
+          their traffic flow. Identify any new hazards.
+          Determine the impact of COVID-19 on crashes in NY City in the year 2020.
+          In particular, explore, find data, and create data visualizations of:
+          <ol>
+            <li>For the years before 2020, which boroughs had the most accidents?</li>
+            <ul>
+              <li>Did this distribution change during 2020?</li>
+            </ul>
+            <li>
+              For the years before 2020, which months had the most accidents? Students in the past have said they thought
+              there were 10% fewer accidents in February then in January. Is this true or is this bogus?
+            </li>
+            <ul>
+              <li>Did this distribution change during 2020?</li>
+            </ul>
+            <li>For the years before 2020, which types of accidents were most prevalent?</li>
+            <ul>
+              <li>Did this distribution change during 2020?</li>
+            </ul>
+            <li>For the years before 2020, which days of the week had the most accidents?</li>
+            <ul>
+              <li>Did this distribution change during 2020?</li>
+            </ul>
+            <li>For a typical year before 2020, how given a seven day calendar that starts at 12:01 AM on Saturday and goes
+          until 11:59 PM midnight on Sunday, when are accidents most likely to happen? </li>
+            <ul>
+              <li>Which day of the week is most likely to have an accident?</li>
+              <li> What time of the day is most likely to have an accident?</li>
+              <li>Does this change in 2020?</li>
+            </ul>
+            <li>Does the timing of when accidents happen depend on the borough of NY City?</li>
+            <ul>
+              <li>Does the amount of change vary from year to year?</li>
+            </ul>
+            <li>
+              For the years before 2020, given the entire region of NY City, which regions are “hot spots,” or places where
+              accidents are most likely to occur?
+            </li>
+            <ul>
+              <li>
+                You will need to do some Parzen density estimation on this. You will need
+                to use the GPS coordinates. You may need to convert the GPS coordinates from degrees:minutes:seconds, to
+                degrees.fractions of degrees (fractional degrees). You do not need to use the Haversine distance. Assume that
+                longitude and latitude is Euclidean for NY City.
+              </li>
+              <li>Create a “heat map” of where accidents occur and overlay it on a map of the city.</li>
+              <li>Do the hot spot locations change in 2020?</li>
+            </ul>
+            <li>Compare the number of car-only accidents (car and car or car and obstacle) with car-pedestrian accidents (car
+              and person or car and bicycle). Do these proportions change in 2020?</li>
+            <li>While working on the data, did you discover anything else you wanted to explore?</li>
+            <ul>
+              <li>Some students in the past found relationships between weather and numbers of accidents.
+                One team identified the surge in the number of accidents that happened after the change to/from daylight
+                savings time.
+              </li>
+            </ul>
+          </ol>         
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
