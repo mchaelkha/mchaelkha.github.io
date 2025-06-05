@@ -164,11 +164,11 @@ p, a {
     border: 5px solid gainsboro;
 }
 
-iframe {
+.calendar iframe {
     border: 0;
     margin-top: 1%;
     width: 80vw;
-    height: 80vh; 
+    height: 80vh;
 }
 
 @media (min-width: 1281px) {
