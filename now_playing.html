@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
   </head>
   <body>
-    <iframe src="https://spotify-now-playing-one-omega.vercel.app/now-playing" style="border:1px #000000 solid;"
+    <iframe src="https://spotify-now-playing-one-omega.vercel.app/now-playing" style="border:1px #000000 solid;background:palegoldenrod;"
         name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="auto"
         width="auto" allowfullscreen></iframe>
     <script>
@@ -22,7 +22,7 @@
       }, 120000);
 
       function reloadIFrame() {
-          document.getElementById('iframe').contentWindow.location.reload();
+          document.querySelector('iframe').contentWindow.location.reload();
       }
     </script>
   </body>
