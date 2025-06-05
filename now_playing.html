@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello there, I'm Michael. I am a software engineer.">
+    <title>🎛️ | Spotify</title>
+    <link rel="shortcut icon" type="image/jpg" href="static/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <iframe src="https://spotify-now-playing-one-omega.vercel.app/now-playing" style="border:1px #000000 solid;"
+        name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="auto"
+        width="auto" allowfullscreen></iframe>
+    <script>
+      window.setInterval(function () {
+          reloadIFrame()
+      }, 120000);
+
+      function reloadIFrame() {
+          document.getElementById('iframe').contentWindow.location.reload();
+      }
+    </script>
+  </body>
+
+</html>
